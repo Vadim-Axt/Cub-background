@@ -89,3 +89,32 @@ section {
   cursor: pointer;
   color: red;
 }
+
+header{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+
+  ul {
+    padding: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: Inter, sans-serif;
+      }
+    }
+  }
+}
