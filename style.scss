@@ -1,4 +1,4 @@
-$full-size: 2;
+$full-size: 10;
 
 @keyframes move-down {
   0% {
@@ -84,7 +84,7 @@ section {
 .top    { transform: rotateX(90deg) translateZ(#{$full-size/2}px); background: cyan}
 .bottom { transform: rotateX(-90deg) translateZ(#{$full-size/2}px); background: aquamarine}
 
-.range {
+#range {
   z-index: 999;
   cursor: pointer;
   color: red;

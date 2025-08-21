@@ -47,8 +47,8 @@ section {
 }
 
 .scene {
-  width: 2px;
-  height: 2px;
+  width: 10px;
+  height: 10px;
   perspective: 800px;
   animation: move-down 10s infinite linear;
 }
@@ -63,8 +63,8 @@ section {
 
 .face {
   position: absolute;
-  width: 2px;
-  height: 2px;
+  width: 10px;
+  height: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,36 +75,36 @@ section {
 }
 
 .front {
-  transform: rotateY(0deg) translateZ(1px);
+  transform: rotateY(0deg) translateZ(5px);
   background: aqua;
 }
 
 .back {
-  transform: rotateY(180deg) translateZ(1px);
+  transform: rotateY(180deg) translateZ(5px);
   background: cyan;
 }
 
 .right {
-  transform: rotateY(90deg) translateZ(1px);
+  transform: rotateY(90deg) translateZ(5px);
   background: cyan;
 }
 
 .left {
-  transform: rotateY(-90deg) translateZ(1px);
+  transform: rotateY(-90deg) translateZ(5px);
   background: cyan;
 }
 
 .top {
-  transform: rotateX(90deg) translateZ(1px);
+  transform: rotateX(90deg) translateZ(5px);
   background: cyan;
 }
 
 .bottom {
-  transform: rotateX(-90deg) translateZ(1px);
+  transform: rotateX(-90deg) translateZ(5px);
   background: aquamarine;
 }
 
-.range {
+#range {
   z-index: 999;
   cursor: pointer;
   color: red;

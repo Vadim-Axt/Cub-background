@@ -1,0 +1,118 @@
+
+$size-snow: 10;
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #111111;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+
+    ul {
+      padding: 0;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 60%;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: Inter, sans-serif;
+        }
+      }
+    }
+  }
+  #range {
+    z-index: 999;
+  }
+
+  #snow-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+
+    .snow {
+
+
+      animation: move-down 10s infinite linear;
+
+
+      .snow-item {
+        width: #{$size-snow}px;
+        height: #{$size-snow}px;
+        position: relative;
+        animation: snow-spin 2s linear infinite;
+
+
+        span {
+          display: block;
+          background: white;
+          position: absolute;
+          transform-origin: center;
+
+        }
+
+        span:nth-child(1) {
+          width: #{$size-snow}px;
+          height: #{$size-snow/10}px;
+          transform: translate(0%, 400%) rotate(180deg);
+        }
+        span:nth-child(2) {
+          width: #{$size-snow}px;
+          height: #{$size-snow/10}px;
+          transform: translate(0, 400%) rotate(45deg);
+        }
+        span:nth-child(3) {
+          width: #{$size-snow}px;
+          height: #{$size-snow/10}px;
+          transform: translate(0%, 400%) rotate(90deg);
+        }
+        span:nth-child(4) {
+          width: #{$size-snow}px;
+          height: #{$size-snow/10}px;
+          transform: translate(0%, 400%) rotate(-45deg);
+        }
+
+      }
+    }
+
+  }
+}
+
+@keyframes snow-spin {
+  0% {
+    transform: rotate(0) rotateX(0) rotateY(0) rotateY(0);
+  }
+  100% {transform: rotate(60deg) rotateX(760deg) rotateY(560deg) rotateZ(560deg)}
+}
+@keyframes move-down {
+  0% {
+    transform: translate(300px, -500px);}
+  100% {
+    transform: translate(-300px, 500px);
+  }
+}
+
+
