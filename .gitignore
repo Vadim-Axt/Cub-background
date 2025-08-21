@@ -1,0 +1,26 @@
+# Зависимости
+node_modules/
+vendor/
+.env
+
+# Логи
+*.log
+logs/
+
+# Временные файлы
+*.tmp
+*.temp
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Сборка
+dist/
+build/
