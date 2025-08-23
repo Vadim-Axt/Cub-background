@@ -1,3 +1,5 @@
+@use 'style' as *;
+
 
 $size-snow: 10;
 
@@ -54,8 +56,6 @@ body {
     position: absolute;
 
     .snow {
-
-
       animation: move-down 10s infinite linear;
 
 
@@ -107,12 +107,3 @@ body {
   }
   100% {transform: rotate(60deg) rotateX(760deg) rotateY(560deg) rotateZ(560deg)}
 }
-@keyframes move-down {
-  0% {
-    transform: translate(300px, -500px);}
-  100% {
-    transform: translate(-300px, 500px);
-  }
-}
-
-
